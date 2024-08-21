@@ -1,0 +1,124 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy-Ui cdm -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="style.css"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#E76F51',
+              }
+            }
+          }
+        }
+      </script>
+    
+</head>
+
+    <header>
+
+        <nav class="mx-auto md:container text-black">
+
+            <div class="navbar bg-neutral text-neutral-content flex justify-between bg-white">
+                <button class="btn bg-transparent text-2xl font-extrabold">Bike Dakho</button>
+                
+                <div class="md:hidden lg:hidden dropdown dropdown-bottom dropdown-end ">
+                    <div tabindex="0" role="button" class="btn m-1"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg></div>
+                        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none">Home</button>
+
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none">Shop</button>
+
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none">News</button>
+
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none">Contact</button>
+
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#df640c] border-none text-white">Login</button>
+
+                    </div>
+
+            </div>
+            
+
+        </nav>
+
+        <!-- slider / Carousel  -->
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="images/slider/bike1.png"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="images/slider/bike2.png"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="images/slider/bike3.png"                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="images/slider/bike3.png"                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+    </header>
+       
+    <main></main>
+
+    <footer></footer>
+
+
+</body>
+</html>
